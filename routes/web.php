@@ -57,12 +57,13 @@ Route::group(  ['prefix'=>'admin', 'middleware'=>['auth']  ],function(){
     });
     Route::group([ 'middleware' => ['CekLogin:kasir'] ], function(){
         Route::resource('order', OrderController::class);
+        Route::resource('orderdetail', OrderDetailController::class);
     });
     Route::group([ 'middleware' => ['CekLogin:manager'] ], function(){
         Route::resource('kategori', KategoriController::class);
         Route::resource('menu', MenuController::class);
-        Route::resource('order', OrderController::class);
-        Route::resource('orderdetail', OrderDetailController::class);
+
+
         Route::resource('pelanggan', PelangganController::class);
         Route::get('select',[MenuController::class,'select']);
         Route::post('postmenu/{id}',[MenuController::class,'update']);
