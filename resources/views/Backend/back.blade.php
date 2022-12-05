@@ -35,8 +35,8 @@
                         <li class="list-group-item"><a href="{{ url('admin/kategori') }}">Kategori</a></li>
                         <li class="list-group-item"><a href="{{ url('admin/menu') }}">Menu</a></li>
                         <li class="list-group-item"><a href="{{ url('admin/pelanggan') }}">Pelanggan</a></li>
-                        <li class="list-group-item"><a href="{{ url('admin/order') }}">Order</a></li>
-                        <li class="list-group-item"><a href="{{ url('admin/orderdetail') }}">Order Detail</a></li>
+             
+                        
                     @endif
                 </ul>
             </div>
